@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Lopes">
+    <meta name="description" content="Loja online de roupas e acessórios">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Loja Online - Roupas e Acessórios</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar container" aria-label="Navegação principal">
+            <a href="index.html" class="nav_logo">WebSite</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="/index.html" class="nav_link">Home</a>
+                    </li>
+                    
+                    <li class="nav_item">
+                        <a href="#featured" class="nav_link">Shop</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="" class="nav_link">News</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#features" class="nav_link">Outlet</a>
+                    </li>
+                    
+                    <li class="nav_item">
+                        <a href="#form" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="nav_close" id="nav-close" aria-label="Fechar menu">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div><!-- nav_menu -->
+
+            <div class="nav_actions">
+                <button class="nav_action-btn" aria-label="Minha conta">
+                    <i class="fa-solid fa-user" aria-hidden="true"></i>
+                </button>
+                <button class="nav_action-btn" aria-label="Carrinho de compras">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    <span class="cart-count">0</span>
+                </button>
+ 
+                <button class="nav_toggle" id="nav-toggle" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home_container container">
+                <div class="home_content">
+                    <div class="home_circle">
+                        <div class="home_subcircle"></div>
+                        <h1 class="home_title">WebSite</h1>
+                    </div><!-- home_circle -->
+
+                    <div class="home_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home_article swiper-slide">
+                                <img src="assets/img/clothing-1.png" alt="Jaqueta casual" class="home_img">
+                                <h2 class="home_product">Jaqueta</h2>
+                                <h3 class="home_price">R$ 125,99</h3>
+                               
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="assets/img/clothing-2.png" alt="Jaqueta esportiva" class="home_img">
+                                <h2 class="home_product">Mochila</h2>
+                                <h3 class="home_price">R$ 115,99</h3>
+                               
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="assets/img/clothing-3.png" alt="Jaqueta premium" class="home_img">
+                                <h2 class="home_product">Calça</h2>
+                                <h3 class="home_price">R$ 98,99</h3>
+                               
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="assets/img/clothing-4.png" alt="Jaqueta de inverno" class="home_img">
+                                <h2 class="home_product">Bermuda</h2>
+                                <h3 class="home_price">R$ 79,99</h3>
+                               
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="assets/img/clothing-5.png" alt="Jaqueta estilizada" class="home_img">
+                                <h2 class="home_product">Camisa</h2>
+                                <h3 class="home_price">R$ 105,99</h3>
+                                
+                            </article>
+                        </div><!-- swiper-wrapper -->
+                    </div><!-- home_swiper -->
+
+                    <button class="swiper-button-prev" aria-label="Produto anterior">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="swiper-button-next" aria-label="Próximo produto">
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>                  
+                </div><!-- home_content -->
+            </div><!-- home_container -->
+        </section><!-- home -->
+
+        <section class="brand" id="brand">
+            <div class="container-img">
+                <img class="brand_img" src="assets/img/brand/img1.png" alt="img">
+                <img class="brand_img" src="assets/img/brand/img2.png" alt="img">
+                <img class="brand_img" src="assets/img/brand/img3.png" alt="img">
+                <img class="brand_img" src="assets/img/brand/img4.png" alt="img">
+                <img class="brand_img" src="assets/img/brand/img5.png" alt="img">
+                <img class="brand_img" src="assets/img/brand/img6.png" alt="img">
+            </div><!-- container -->
+        </section><!--brand-->
+
+        <section class="featured" id="featured">
+            <div class="container_header">
+                <h2>Produto em Destaque</h2>
+                <hr>
+                <p>Venha conferir a nova coleção de produtos com excelente preço.</p>
+            </div>
+    
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="/assets/img/featured/img1.png" alt="Sapatenis modelo 1" class="product-image">
+                    <div class="star-rating" aria-label="Avaliação 5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="product-name">Bolsa</h3>
+                    <p class="product-price">R$ 492,00</p>
+                    <button class="buy-button">Comprar agora</button>
+                </article>
+    
+                <article class="product-card">
+                    <img src="assets/img/featured/img2.png" alt="Sapatenis modelo 2" class="product-image">
+                    <div class="star-rating" aria-label="Avaliação 5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="product-name">Perfume</h3>
+                    <p class="product-price">R$ 292,00</p>
+                    <button class="buy-button">Comprar agora</button>
+                </article>
+    
+                <article class="product-card">
+                    <img src="assets/img/featured/img3.png" alt="Sapatenis modelo 3" class="product-image">
+                    <div class="star-rating" aria-label="Avaliação 5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="product-name">Sapatenis</h3>
+                    <p class="product-price">R$ 192,00</p>
+                    <button class="buy-button">Comprar agora</button>
+                </article>
+    
+                <article class="product-card">
+                    <img src="assets/img/featured/img4.png" alt="Sapatenis modelo 4" class="product-image">
+                    <div class="star-rating" aria-label="Avaliação 5 de 5 estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="product-name">Bone</h3>
+                    <p class="product-price">R$ 92,00</p>
+                    <button class="buy-button">Comprar agora</button>
+                </article>
+            </div>
+        </section><!--featured-->
+
+        <section class="banner">
+            <div class="banner_container">
+                <div class="banner_title">
+                    <h4>Promoção</h4>
+                    <h1>Coleção de Outono <br>Com até 30% OFF</h1>
+                </div>
+                <button class="banner_btn">Saiba Mais!</button>
+
+            </div><!--container-->
+        </section><!--banner-->
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title">Nossos Diferenciais</h2>
+                <div class="features_grid">
+                    <div class="feature_card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h3>Entrega Rápida</h3>
+                        <p>Entrega em todo o Brasil em até 7 dias úteis</p>
+                    </div>
+                    <div class="feature_card">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <h3>Pagamento Seguro</h3>
+                        <p>Diversas opções de pagamento com total segurança</p>
+                    </div>
+                    <div class="feature_card">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <h3>Troca Garantida</h3>
+                        <p>30 dias para trocar ou devolver sem complicação</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <section class="form" id="form">
+            <div class="contact-hero">
+                <div class="container">
+                    <h1 class="contact-title">Entre em Contato</h1>
+                    <p class="contact-subtitle">Estamos aqui para ajudar você com qualquer dúvida ou informação</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h3>Telefone</h3>
+                            <p>+55 (11) 99999-9999</p>
+                            <p>+55 (11) 88888-8888</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>contato@website.com</p>
+                            <p>suporte@website.com</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h3>Endereço</h3>
+                            <p>Av. Paulista, 1000</p>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <div class="container">
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h2>Envie sua mensagem</h2>
+                            <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível</p>
+                        </div>
+
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nome completo</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Selecione um assunto</option>
+                                    <option value="duvida">Dúvida sobre produto</option>
+                                    <option value="pedido">Informação sobre pedido</option>
+                                    <option value="reclamacao">Reclamação</option>
+                                    <option value="sugestao">Sugestão</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <label for="privacy">Concordo com a <a href="#">Política de Privacidade</a></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <button type="submit" class="submit-btn">Enviar mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_col">
+                    <h3 class="footer_title">WebSite</h3>
+                    <p class="footer_description">Roupas e acessórios de qualidade com os melhores preços.</p>
+                    <ul class="social_list">
+                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer_col">
+                    <h3 class="footer_title">Links Úteis</h3>
+                    <ul class="footer_links">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Políticas de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer_col">
+                    <h3 class="footer_title">Contato</h3>
+                    <ul class="footer_contact">
+                        <li><i class="fa-solid fa-phone" aria-hidden="true"></i> +55 (11) 99999-9999</li>
+                        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> contato@website.com</li>
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> São Paulo, SP - Brasil</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <p>&copy; 2025 WebSite. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
